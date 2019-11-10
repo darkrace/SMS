@@ -1,0 +1,44 @@
+{% extends 'student/student_base.html' %}
+{% block body %}
+<h1>Result</h1>
+{% for i in obj %}
+Roll No :- {{i.roll_no}}<br>
+{% endfor %}
+Name :-     {{ user.fullname }}
+<br>
+<span class="right ym-20">Couse Title / Class</span>
+<table class="table">
+    <tr>
+        <th>Course Id</th>
+        <th colspan="2">Course Title</th>
+        <th>Grade</th>
+        <th>Number</th>
+        <th>Date</th>
+
+    </tr>
+    <tr>
+        <td>Course Id</td>
+        <td colspan="2">Course Title</td>
+        <td>Grade</td>
+        <td>Number</td>
+        <td>Date</td>
+
+    </tr>
+    <tr>
+        <td>Course Id</td>
+        <td colspan="2">Course Title</td>
+        <td>Grade</td>
+        <td>Number</td>
+        <td>Date</td>
+
+    </tr>
+    <tr>
+        <td>Course Id</td>
+        <td colspan="2">Course Title</td>
+        <td>Grade</td>
+        <td>Number</td>
+        <td>Date</td>
+
+    </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'student/student_base.html' %}
+{% block body %}
+<h1>Time Table</h1>
+<table class="table">
+    {% for i in time_table_obj %}
+    <tr>
+        <th>Time</th>
+        <td>{{ i.start_time }} - To - {{ i.end_time }}</td>
+        <td>{{ i.start_time }} - To - {{ i.end_time }}</td>
+        <td>{{ i.subject.subjects}}</td>
+    </tr>
+    {% endfor %}
+
+
+</table>
+{% endblock %}

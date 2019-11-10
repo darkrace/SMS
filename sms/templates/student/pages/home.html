@@ -1,0 +1,10 @@
+{% extends 'student/student_base.html' %}
+{% block body %}
+<h1>Home : - </h1>
+{% if user.is_authenticated %}
+    {{ user.id }} <br>
+    {{ user.fullname }}
+{% else %}
+Authentication Ceridential
+{% endif %}
+{% endblock %}

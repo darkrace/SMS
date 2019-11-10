@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slug detail</title>
+</head>
+<body>
+<h1>Class : {{ slug.class_name }}</h1>
+
+    Section : {{ slug.section_name|safe }}
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Roll No</td>
+                <td>address</td>
+                <td>section</td>
+            </tr>
+            <tr>
+                <td>{{std.name}}</td>
+                <td>{{std.roll_no}}</td>
+                <td>{{std.address}}</td>
+            </tr>
+        </table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Class</td>
+        <td>Section</td>
+        <td>Roll No</td>
+    </tr>
+     {% for i in obj %}
+     <tr>
+
+        <td>{{ i.name }}</td>
+        <td>{{ i.class_id.class_name }}</td>
+         <td>{{ i.class_id.section_name}}</td>
+         <td>{{ i.roll_no}}</td>
+
+    </tr>
+       {% endfor %} <br>
+</table>
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+Wellcome to Class
+{% for i in object %}
+
+<a href="{% url 'student:class_name' i.slug %}">{{ i.class_name }}</a>
+<br>
+
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+{% for i in obj %}
+<div class="container">
+
+
+Class : <a href="{% url 'student:single_slug' i.slug %}">{{ i.class_name }}</a>
+<br>
+
+</div>
+{% endfor %}
+{% endblock %}
